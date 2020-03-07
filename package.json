@@ -1,0 +1,32 @@
+{
+  "name": "contact-us-lambda",
+  "version": "1.0.0",
+  "description": "Contact us microservice.",
+  "main": "index.js",
+  "scripts": {
+    "upgrade": "ncu -u",
+    "deploy": "cross-env NODE_ENV=production serverless deploy -v -s prod -e production",
+    "remove": "cross-env NODE_ENV=production serverless remove -v -s prod -e production"
+  },
+  "author": "Tadas Talaikis <info@talaikis.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "npm-check-updates": "^4.0.4",
+    "serverless": "^1.65.0",
+    "serverless-dotenv-plugin": "^2.3.2",
+    "serverless-offline": "^5.12.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.635.0",
+    "frenchkiss": "^0.2.1",
+    "legit": "^1.0.7"
+  }
+}

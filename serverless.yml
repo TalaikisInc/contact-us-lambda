@@ -1,0 +1,33 @@
+service: contact-us-service
+
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${env:STAGE}
+  memorySize: 128
+  region: ${env:REGION}
+  allowed-stages:
+    - dev
+    - prod
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - ses:SendTemplatedEmail
+      Resource: "*"
+
+functions:
+  contactUs:
+    handler: index.handler
+    environment:
+      EMAIL_TO: ${env:EMAIL_TO}
+      API_KEY: ${env:API_KEY}
+      REGION: ${env:REGION}
+    events:
+      - http:
+          method: post
+          path: contact-us
+          cors: true
