@@ -24,6 +24,7 @@ functions:
     handler: index.handler
     environment:
       EMAIL_TO: ${env:EMAIL_TO}
+      EMAIL_FROM: ${env:EMAIL_FROM}
       API_KEY: ${env:API_KEY}
       REGION: ${env:REGION}
     events:

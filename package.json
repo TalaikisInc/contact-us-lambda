@@ -13,19 +13,19 @@
   "devDependencies": {
     "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
-    "eslint": "^7.0.0",
+    "eslint": "^7.2.0",
     "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "npm-check-updates": "^6.0.1",
-    "serverless": "^1.71.1",
+    "npm-check-updates": "^7.0.0",
+    "serverless": "^1.72.0",
     "serverless-dotenv-plugin": "^2.4.2",
-    "serverless-offline": "^6.1.5"
+    "serverless-offline": "^6.4.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.680.0",
+    "aws-sdk": "^2.693.0",
     "frenchkiss": "^0.2.1",
     "legit": "^1.0.8"
   }

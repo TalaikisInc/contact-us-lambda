@@ -1,8 +1,7 @@
-const AWS = require('aws-sdk')
-AWS.config.update({ region: process.env.REGION })
+const SES = require('aws-sdk/clients/ses')
 
 module.exports.createEmailTemplates = () => {
-  const ses = new AWS.SES({ region: 'us-east-1' })
+  const ses = new SES({ region: process.env.REGION })
 
   const templates = {
     0: {
